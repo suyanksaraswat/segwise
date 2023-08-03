@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 
 import {
   ListSubheader,
-  alpha,
   Box,
   List,
   styled,
@@ -12,9 +11,6 @@ import {
 } from '@mui/material';
 import NextLink from 'next/link';
 import { SidebarContext } from 'src/contexts/SidebarContext';
-
-import BrightnessLowTwoToneIcon from '@mui/icons-material/BrightnessLowTwoTone';
-import MmsTwoToneIcon from '@mui/icons-material/MmsTwoTone';
 import Image from 'next/image';
 
 const MenuWrapper = styled(Box)(
@@ -205,10 +201,10 @@ function SidebarMenu() {
                 </NextLink>
               </ListItem>
               <ListItem component="div">
-                <NextLink href="/notifications" passHref>
+                <NextLink href="/notification" passHref>
                   <Button
                     className={
-                      currentRoute === '/notifications'
+                      currentRoute === '/notification'
                         ? 'active'
                         : 'non-active'
                     }
